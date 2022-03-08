@@ -8,6 +8,8 @@ function requireAuth(req, res, next) {
         next();
         return;
     }
+    res.status(403);
+    res.send('Not Permitted');
 }
 const router = (0, express_1.Router)();
 exports.router = router;
@@ -66,4 +68,6 @@ router.get('/logout', (req, res) => {
     req.session = undefined;
     res.redirect('/');
 });
-router.get('/protected');
+router.get('/protected', requireAuth, (req, res) => {
+    res.send('Welcome to protected route in user!');
+});
