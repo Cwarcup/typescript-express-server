@@ -154,3 +154,18 @@ interface RequestWithBody extends Request {
 };
 ```
 
+# Prototype Reminder
+Remember, classes in ES 2015 and TypeScript do not *really* exist. **classes in JavaScript are 'syntactic sugar' over prototypal inheritance.**
+
+
+
+# Decorators
+
+import [ts-express-decorator](https://www.npmjs.com/package/ts-express-decorators)
+
+Decorators are...
+- function that can be used to **modify/change properties/methods in the class.**
+- not the same as JavaScript decorators.
+- used inside/on classes only.
+- understanding the order in which decorators are ran.
+- experimental.
