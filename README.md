@@ -169,3 +169,15 @@ Decorators are...
 - used inside/on classes only.
 - understanding the order in which decorators are ran.
 - experimental.
+
+Decorator [notes: ](https://github.com/Cwarcup/notes/root/typescript/topics/decorators.md#L318)
+
+# A Closer Integration
+
+So for now, we've tried to use express as normally as we could and just added in the absolute bare minimum number of type annotations. So we were only making use of typescript to get some really basic checking and error catching inside of our app. We didn't do any special customization or anything like that. 
+
+Next, we're going to try to figure out how we can really twist express and ts together to make them work together way more closely than they currently are.
+
+Whenever we make use of ts, the main features of the language is classes and interfaces. How do we get express to work with classes? It's a spectrum.
+
+**Continue if getting very into express and ts.**
